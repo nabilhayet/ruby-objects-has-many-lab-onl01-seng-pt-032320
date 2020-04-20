@@ -12,7 +12,7 @@ attr_accessor :title, :author
   end
   
   def author_name
-     if self.author.name.exists?
+     if self.author.exists?(name)
        return self.author.name 
       else 
         return nil 
